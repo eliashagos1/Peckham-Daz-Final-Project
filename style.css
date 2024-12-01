@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Staatliches&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Squada+One&family=Staatliches&display=swap');
 
 *{
     padding: 0px;
@@ -25,9 +24,41 @@
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
-    margin: 10px 0px;
+    margin: 16px 0px;
+}
+
+.firstname{
+    margin-left: 5px;
 }
 
 .surname{
     font-size: 20px;
+}
+
+
+/* CONTENT NAV SECTION */
+
+.content_nav ul{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0px;
+    list-style-type: none;
+
+}
+
+ul a{
+    
+    text-decoration: none;
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+    
+}
+
+.inspo{
+    margin-right: 5px;
 }
