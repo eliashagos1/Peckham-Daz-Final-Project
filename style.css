@@ -33,6 +33,37 @@
 
 .surname{
     font-size: 20px;
+    
+}
+
+/* FIRST AND SURNAME ANCHOR INTERACTION DESIGN */
+
+.firstname a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.firstname a:active{
+    color: black;
+}
+
+.firstname a:hover{
+    color: white;
+}
+
+.surname a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.surname a:hover{
+    color: white;
+}
+
+.surname a:active{
+    color: black;
 }
 
 
@@ -59,6 +90,19 @@ ul a{
     
 }
 
-.inspo{
+.Inspiration{
     margin-right: 5px;
+}
+
+/* CONTENT NAV ANCHOR INTERACTION DESIGN */
+.nav a{
+    transition: color 0.5s ease;
+}
+.nav a:active{
+    color: black;
+
+}
+
+.nav a:hover{
+    color: white;
 }
