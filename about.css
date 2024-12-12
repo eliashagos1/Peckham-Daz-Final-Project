@@ -12,7 +12,8 @@
 .bio{
     display: flex;
     justify-content: space-between;
-    background-color: #DED8CB;
+    background: rgb(255,106,59);
+    background: linear-gradient(180deg, rgba(255,106,59,1) 0%, rgba(222,216,203,1) 100%);
 }
 
 .bio_title{
@@ -57,7 +58,9 @@ a:hover{
 /* MAIN BODY CONTENT */
 
 .content_container{
-    background-color: #DED8CB;
+    /* background-color: #DED8CB; */
+    background: rgb(222,216,203);
+background: linear-gradient(180deg, rgba(222,216,203,1) 27%, rgba(236,233,226,1) 100%);
     height: 100vh;
     width: 100%;
     display: flex;
