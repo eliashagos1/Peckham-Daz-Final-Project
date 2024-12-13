@@ -151,7 +151,8 @@ body .main_section{
 .second_div_text{
     text-align: center;
     padding-top: 10px;
-    color: white;
+    color: black;
+    font-family: "Archivo", sans-serif;
 }
 /* SECOND ROW */
 
