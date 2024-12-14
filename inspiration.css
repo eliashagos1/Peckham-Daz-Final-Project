@@ -157,10 +157,10 @@ body .main_section{
 /* SECOND ROW */
 
 .second_row{
-    background-color: green;
+    /* background-color: green; */
     height: 700px;
     width:470px;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
 }
 
 .third_div{
@@ -194,13 +194,39 @@ body .main_section{
 
 .fourth_div img{
     height: 400px;
+    width: 330px;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
 }
 
 .fourth_div_text{
     padding-top: 10px;
     text-align: center;
+    font-family: "Archivo", sans-serif;
 }
+
+.sdc{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.small_paint_two div img{
+    height: 180px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+}
+
+
 
 /* THIRD ROW */
 
