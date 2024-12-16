@@ -115,6 +115,7 @@ body .main_section{
     box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
 }
 
+
 .small_paint .close_up{
     height: 180px;
     padding-top: 5px;
@@ -131,8 +132,8 @@ body .main_section{
 .second_div{
     height:230px;
     width: 510px;
-    /* background-color: black; */
     margin-top: 15px;
+    margin-bottom: 5px;
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -166,29 +167,34 @@ body .main_section{
 .third_div{
     height: 230px;
     width: 470px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     
 }
 
 .third_div img{
     height: 200px;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
 
 }
 
 .third_div_text{
-    padding-top: 10px;
+    padding-top: 5px;
     text-align: center;
+    font-family: "Archivo", sans-serif;
 }
 
 .fourth_div{
     height: 400px;
     width: 330px;
-    background-color: black;
-    margin-top: 15px;
+    /* background-color: black; */
+    margin-top: 5px;
     border-radius: 10px;
 }
 
@@ -208,7 +214,7 @@ body .main_section{
 }
 
 .sdc{
-    padding-top: 15px;
+    height: 439px;
     display: flex;
     justify-content: space-evenly ;
     align-items: center;
@@ -238,17 +244,17 @@ body .main_section{
 }
 
 .fifth_div{
-    height: 255px;
+    height: 400px;
     width: 470px;
-    background-color: black;
+    background-color: white;
+    margin-top: 15px;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 
 .fifth_div img{
-    height: 250px;
+    height: 400px;
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -258,16 +264,16 @@ body .main_section{
 }
 
 .sixth_div{
-    height: 400px;
+    height: 255px;
     width: 470px;
-    background-color: white;
-    margin-top: 15px;
+    background-color: black;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .sixth_div img{
-    height: 400px;
-    width: 300px;
+    height: 250px;
     border-radius: 10px;
 }
 
