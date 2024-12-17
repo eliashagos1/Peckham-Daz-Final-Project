@@ -237,7 +237,7 @@ body .main_section{
 /* THIRD ROW */
 
 .third_row{
-    background-color: green;
+    /* background-color: green; */
     height: 700px;
     width: 470px;
     
@@ -246,10 +246,22 @@ body .main_section{
 .fifth_div{
     height: 400px;
     width: 470px;
-    background-color: white;
+    /* background-color: white; */
     margin-top: 15px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+/* Precise class for the large painting */
+
+.fd_first_painting{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+}
+
+/* Precise class for the large painting */
 
 
 .fifth_div img{
@@ -258,9 +270,21 @@ body .main_section{
     border-radius: 10px;
 }
 
+.tr_small_paints img{
+    height: 200px;
+    width: 150px;
+    padding-left: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+}
+
 .fifth_div_text{
     padding-top: 10px;
     text-align: center;
+    padding: 15px 0px 10px 0px;
+    font-family: "Archivo", sans-serif;
 }
 
 .sixth_div{
@@ -274,6 +298,7 @@ body .main_section{
 
 .sixth_div img{
     height: 250px;
+    width: 180px;
     border-radius: 10px;
 }
 
