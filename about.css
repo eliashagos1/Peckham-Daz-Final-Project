@@ -79,6 +79,10 @@ a:hover{
     font-family: "Archivo", sans-serif;
 }
 
+.p1,.p2{
+    padding: 5px;
+}
+
 /* TECH AND ART TITLE */
 
 .tech_art span{
@@ -86,8 +90,18 @@ a:hover{
     font-family: "Squada One", sans-serif;
 }
 
+.ta_title{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
 /* IMAGE SECTION */
 
+.fullname_div{
+    text-align: center;
+    padding-bottom: 5px;
+}
 .full_name{
     font-family: "Squada One", sans-serif;
     font-size: 30px;
@@ -107,6 +121,11 @@ img{
 
 /* PASSION SECTION */
 
+.passion_title_div{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 .passion{
     width: 400px;
     height: 300px;
@@ -119,4 +138,8 @@ img{
 .passion_larger span{
     font-family: "Squada One", sans-serif;
     font-size: 30px;
+}
+
+.passion_p1, .passion_p2{
+    padding: 5px;
 }

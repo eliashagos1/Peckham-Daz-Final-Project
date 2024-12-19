@@ -140,6 +140,13 @@ ul a{
     border-radius: 10px;
 }
 
+.first_group img{
+    height: 380px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
 
 
 /* HOVER STATUS FOR THE SKETCHES FIRST ROW */
@@ -156,14 +163,22 @@ ul a{
     flex-direction: row;
     transition: transform 0.2s;
 }
+
+
 .sketch_5, .sketch_6, .sketch_7, .sketch_8{
     background-color: #ffffff;
-    height: 330px;
+    height: 340px;
     width: 300px;
     margin: 25px auto;
     border-radius: 10px;
 }
 
+.second_group img{
+    height: 340px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 /* HOVER STATUS FOR THE SKETCHES FIRST ROW */
 
 .sketch_5:hover, .sketch_6:hover, .sketch_7:hover, .sketch_8:hover{
