@@ -3,6 +3,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -67,8 +68,11 @@ ul a:hover{
 body .main_section{
     background: rgb(255,106,59);
     background: linear-gradient(180deg, rgba(255,106,59,1) 0%, rgba(153,64,35,1) 0%);
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
     width: 100%;
+    overflow: hidden;
 }
 
 .main_section{
@@ -290,21 +294,25 @@ body .main_section{
 .sixth_div{
     height: 255px;
     width: 470px;
-    background-color: black;
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .sixth_div img{
-    height: 250px;
+    height: 240px;
     width: 180px;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.56);
 }
 
 .sixth_div_text{
-    padding-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 5px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 
