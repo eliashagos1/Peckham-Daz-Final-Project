@@ -115,6 +115,36 @@ ul a{
     color: white;
 }
 
+/* Burger Icon (Hidden on larger screens) */
+.burger-icon {
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 5px;
+    padding:30px 20px 0px 0px;
+}
+
+.burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Active State for Burger Icon */
+.burger-icon.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
 /* MAIN CONTENT SECTION */
 
 .sketchbook_container{
@@ -183,4 +213,23 @@ ul a{
 
 .sketch_5:hover, .sketch_6:hover, .sketch_7:hover, .sketch_8:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 750px) and (min-width: 350px) {
+    .nav{
+        display: none;
+    }
+
+    .artist_name{
+        width: 100%;
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    /* Show the burger icon on smaller screens */
+    .burger-icon {
+        display: flex;
+        
+    }
+    
 }
