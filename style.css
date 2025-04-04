@@ -188,14 +188,14 @@ ul a{
 .first_group{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     transition: transform 0.2s;
+    padding: 50px 0px;
 }
 
 .sketch_1, .sketch_2, .sketch_3, .sketch_4{
-    background-color: #ffffff;
     height: 360px;
     width: 300px;
-    margin: 50px auto;
     border-radius: 10px;
 }
 
@@ -220,15 +220,16 @@ ul a{
 .second_group{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    /*first is up, second is left and right and third is down*/
+    padding: 20px 0px 40px;
     transition: transform 0.2s;
 }
 
 
 .sketch_5, .sketch_6, .sketch_7, .sketch_8{
-    background-color: #ffffff;
     height: 340px;
     width: 300px;
-    margin: 25px auto;
     border-radius: 10px;
 }
 
@@ -244,47 +245,66 @@ ul a{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 650px) and (min-width: 350px) {
+
+
+
+/*IPHONE AND SMALLER DEVICES*/
+
+@media screen and (max-width: 650px) and (min-width: 250px) {
     body{
-        width: 100%;
+        max-width: 100%;
         height: 100vh;
+        overflow-x: hidden;
     }
     .nav{
         display: none;
     }
 
+
+
     .artist_name{
-        width: 100%;
+        max-width:100%;
         font-size: 40px;
         padding-left: 10px;
     }
 
+    
+
     /* Show the burger icon on smaller screens */
     .burger-icon {
         display: flex;
-        
+
+    }
+
+    .burger-icon .bar{
+        background-color: #fff;
     }
 
     .core-content{
         display: flex;
         justify-content: space-between;
+        height: 105px;
     }
 
     .greater-container{
         display: flex;
         flex-direction: column;
+        background-color: #000;
+    }
+
+    .nav_container_items .artist_name a{
+        color: white;
     }
 
     .dropdown-menu-container{
-        width: 23.5em;
+        max-width: 100%;
     }
 
     .dropdown-menu{
         position: relative;
         z-index: 999999;
-        background: rgb(255,106,59);
         background: linear-gradient(180deg, rgb(248, 216, 207) 5%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 80%);
-        width: 100%;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -292,7 +312,119 @@ ul a{
 
     .sketchbook_container{
         display: flex;
-        flex-direction: column;
+        padding-left: 20px;
+        background-color: #000;
     }
+
+    /* FIRST ROW OF SKETCHES */
+
+    .first_group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first_group img{
+        height: 22em;
+        max-width: 17em;
+    }
+
+    .sketch_1{
+        padding-bottom: 25px;
+    }
+
+    .sketch_2{
+        padding-bottom: 25px;
+    }
+
+    .sketch_3{
+        padding-bottom: 25px;
+    }
+
+    .second_group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     
+    .second_group img{
+        height: 22em;
+        max-width: 16.5em;
+    }
+
+    .sketch_5{
+        padding-bottom: 50px;
+    }
+
+    .sketch_6{
+        padding-bottom: 60px;
+    }
+
+    .sketch_7{
+        padding-bottom: 60px;
+    }
+
+    
+    
+}
+
+
+/*LARGE IPAD AND SMALLER IPADS (MEDIUM VIEW)*/
+
+@media screen and (max-width: 780px) and (min-width: 650px){
+    body, html{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .nav_container_items{
+        width: 100%;
+        display: flex;
+    }
+
+    /* MAIN CONTENT SECTION */
+
+    /*GRANDPARENT CONTAINER*/
+
+
+
+    /*CHILD CONTAINER*/
+    
+    .first_group{
+        width: 100%;
+        height: 14em;
+        margin-bottom: 3em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .first_group img{
+        width: 11em;
+        height: 14em;
+        margin: 3px;
+        -webkit-box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.53);
+        -moz-box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.53);
+        box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.53);
+
+    }
+
+    .second_group{
+        width: 100%;
+        height: 14em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .second_group img{
+        width: 11em;
+        height: 14em;
+        -webkit-box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.53);
+        -moz-box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.53);
+        box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.53);
+
+    }
+
+
 }
