@@ -8,16 +8,51 @@
 </head>
 <body>
     <header class="bio">
-        <div class="bio_title">
-            <Span>Bio</Span>
+
+
+        <div class="nest_for_dropdown_column_style">
+
+            <div class="nest_for_bio_and_bar">
+
+                <div class="bio_title">
+                    <Span>Bio</Span>
+                </div>
+
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">SKETCHBOOK</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="inspiration"><a href="inspiration.html">INSPIRATION</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="toggle-button-container">
+                    <!-- Burger Icon (Hidden on larger screens) -->
+                    <div class="burger-icon" id="burger-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+        
+            </div> <!-- closing tag related to nest for bio and bar-->
+
+            
+    
+    
+    
+                <!-- Dropdown Menu (Hidden on larger screens) -->
+            <div class="dropdown-menu-container">
+                <ul class="dropdown-menu" id="dropdown-menu">
+                    <li><a href="index.html">SKETCHBOOK</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li class="Inspiration"><a href="inspiration.html">INSPIRATION</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">SKETCHBOOK</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="inspiration"><a href="inspiration.html">INSPIRATION</a></li>
-            </ul>
-        </div>
+        
     </header>
 
 
@@ -64,5 +99,6 @@
             </div>
         </div>
     </main>
+    <script src="app.js" defer></script>
 </body>
 </html>

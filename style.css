@@ -256,6 +256,7 @@ ul a{
         height: 100vh;
         overflow-x: hidden;
     }
+
     .nav{
         display: none;
     }
@@ -271,6 +272,14 @@ ul a{
     
 
     /* Show the burger icon on smaller screens */
+    
+    .core-content{
+        display: flex;
+        justify-content: space-between;
+        height: 105px;
+    }
+
+
     .burger-icon {
         display: flex;
 
@@ -278,12 +287,6 @@ ul a{
 
     .burger-icon .bar{
         background-color: #fff;
-    }
-
-    .core-content{
-        display: flex;
-        justify-content: space-between;
-        height: 105px;
     }
 
     .greater-container{
