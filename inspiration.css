@@ -315,5 +315,11 @@ body .main_section{
 }
 
 
+@media screen and (max-width:650px) and (min-width:250px){
 
+    body{
+        
+    }
+
+}
 
