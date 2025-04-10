@@ -25,6 +25,7 @@
 }
 
 
+
 .bio_title{
     margin: 25px 0px;
     padding: 0px 25px;
@@ -215,50 +216,65 @@ img{
 
 @media screen and (max-width: 650px) and (min-width: 250px) {
 
-    body{
-        max-width: 100%;
+    html, body{
+        max-width: 100vh;
         height: 100vh;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
         overflow-x: hidden;
+        background-color: #000;
     }
+
+    /* Hide scrollbar for Chrome, Safari, Opera */
+    ::-webkit-scrollbar {
+    display: none;
+  }
 
     .navbar{
         display: none;
     }
 
+
     .bio{
-        max-width: 100%;
         display: flex;
+        /* border: 5px solid beige; */
+        width: 100%;
     }
 
     .bio_title{
-        max-width: 100%;
         font-size: 40px;
         color: #fff;
     }
 
     .nest_for_bio_and_bar{
-        max-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        background-color: #000;
+        /* border: 1px solid rgb(114, 0, 213); */
+        width: 100%;
+    }
+
+    .toggle-button-container{
+        /* margin-left: 15.4em; */
     }
     
 
     .nest_for_dropdown_column_style{
-        max-width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     .dropdown-menu-container{
-        max-width: 100%;
+        max-width: 100vh;
     }
     
     .dropdown-menu{
         position: relative;
         z-index: 999999;
         background: linear-gradient(180deg, rgb(248, 216, 207) 5%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 80%);
-        max-width: 100%;
+        max-width: 100vh;
         text-align: center;
     }
 
@@ -277,12 +293,67 @@ img{
         max-width: 100%;
     }
 
-    .dropdown-menu{
-        position: relative;
-        z-index: 999999;
-        background: linear-gradient(180deg, rgb(248, 216, 207) 5%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 80%);
-        max-width: 100%;
-        text-align: center;
+
+    /*MAIN SECTION*/
+
+    .content_container{
+        height: 100vh;
+        max-width: 100vh;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        
     }
 
+    .tech_art{
+        background-color: #000;
+        padding: 5em;
+    }
+
+    .ta_title{
+        padding-bottom: 0.8em;
+        color: #fff;
+    }
+
+    .tech_text{
+        max-width: 18.9em;
+        height: 22em;
+        padding: 0.9em;
+    }
+
+    /*SELF BIO SECTION*/
+
+    .fullname_div{
+        color: #fff;
+        background-color: #000;
+        padding: 0.9em;
+    }
+
+    .bio_img{
+        background-color: #000;
+        padding: 5em;
+    }
+
+    .bio_img img{
+        border-radius: 3.5em;
+    }
+
+
+    /*PASSION SECTION*/
+
+    .passion_larger{
+        background-color: #000;
+        padding: 5em;
+    }
+
+    .passion_title_div{
+        color: #fff;
+        padding-bottom: 1em;
+    }
+
+    .passion{
+        max-width: 18.9em;
+        max-height: 22em;
+        padding: 0.9em;
+    }
 }
