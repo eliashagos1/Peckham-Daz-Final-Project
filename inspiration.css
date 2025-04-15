@@ -13,13 +13,11 @@
     justify-content: space-between;
     width: 100%;
     height: 130px;
-}
-
-.header_section{
     background: rgb(255,106,59);
     background: linear-gradient(180deg, rgba(255,106,59,1) 0%, rgba(153,64,35,1) 30%);
 
 }
+
 
 
 /* TITLE SECTION */
@@ -33,8 +31,16 @@
     transition: color 0.6s ease;
 }
 
+.lit-title{
+    display: none;
+}
+
 .title:hover{
     color: white;
+}
+
+.toggle-button-container{
+    display: none;
 }
 
 /* NAVBAR SECTION */
@@ -59,6 +65,62 @@ ul a:hover{
     font-family: "Squada One", sans-serif;
     font-size: 35px;
     color: black;
+}
+
+    /* Burger Icon (Hidden on larger screens) */
+    .burger-icon {
+        cursor: pointer;
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        gap: 5px;
+        padding:30px 20px 0px 0px;
+    }
+    
+    .burger-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+    
+    /* Active State for Burger Icon */
+    .burger-icon.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .burger-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-icon.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Dropdown Menu (Hidden on larger screens) */
+
+.dropdown-menu-container{
+    display: none; /* Hidden by default */
+    background: rgb(255,106,59);
+    background: linear-gradient(180deg, rgba(255,106,59,1) 3%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 80%);
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+
+.dropdown-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px; /* Space between menu items */
+}
+
+/* Show Dropdown Menu */
+.dropdown-menu-container.active {
+    display: block;
+    flex-direction: column;
 }
 
 
@@ -315,11 +377,154 @@ body .main_section{
 }
 
 
-@media screen and (max-width:650px) and (min-width:250px){
+@media screen and (max-width: 650px) and (min-width: 250px){
 
     body{
+        margin: 0;
+        padding: 0;
         
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+
+    .nav_section{
+        display: none;
+    }
+
+    .header_section{
+        background: #000;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .lit-title{
+        display: flex;
+        font-family: "Squada One", sans-serif;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    
+
+    .toggle-button-container{
+        display: flex;
+    }
+
+    /* Show the burger icon on smaller screens */
+
+    .burger-icon{
+        display: flex;
+    }
+
+    .burger-icon .bar{
+        background-color: #fff;
+    }
+
+    .burger-and-dropdown{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .dropdown-menu-container{
+        max-width: 100%;
+    }
+    
+    .dropdown-menu{
+        background: linear-gradient(180deg, rgb(248, 216, 207) 5%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 80%);
+        text-align: center;
+    }
+
+
+    /*MAIN SECTION*/
+
+    .main_section{
+        background: #000;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .first_row{
+        height: 100vh;
+        width: 100%;
+        background: #000;
+        justify-content: center;
+    }
+
+    .fdc{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /*FIRST LARGE PAINTING*/
+    .first_div{
+        display: flex;
+        margin: auto;
+
+    }
+
+    .small_paint{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 0em;
+    }
+    
+    /*FIRST ROW, LAST 3 PAINTINGS*/
+    .second_div{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 0em 7em 0em 0em;
+        padding-right: -5em;
+        flex-flow: row-reverse;
+    }
+
+    .second_div img{
+        height: 10em;
+        width: 7em;
+    }
+
+    .second_row{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    
+
+    .third_div{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*SECOND SECTION*/
+
+    .second_row{
+        display: block;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background: #000;
+    }
+
+    /*Second row of 3 paintings*/
+    .third_div{
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        width: 100%;
+    }
+
+
 
 }
 
