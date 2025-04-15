@@ -451,10 +451,11 @@ body .main_section{
     }
     
     .first_row{
-        height: 100vh;
+        height: auto;
         width: 100%;
         background: #000;
         justify-content: center;
+        border-bottom: 2px #fff solid;
     }
 
     .fdc{
@@ -484,6 +485,7 @@ body .main_section{
         padding: 0em 7em 0em 0em;
         padding-right: -5em;
         flex-flow: row-reverse;
+        height: auto;
     }
 
     .second_div img{
@@ -495,7 +497,7 @@ body .main_section{
         height: 100vh;
         display: flex;
         flex-direction: column;
-        
+        padding-top: 3em;
     }
 
     
@@ -514,6 +516,7 @@ body .main_section{
         height: 100%;
         width: 100%;
         background: #000;
+        
     }
 
     /*Second row of 3 paintings*/
@@ -522,6 +525,68 @@ body .main_section{
         flex-flow: row wrap;
         height: auto;
         width: 100%;
+    }
+
+    .third_div img{
+        height: 10em;
+        width: 7em;
+    }
+
+    /*Second large painting and two small paintings*/
+
+    .sdc{
+        flex-flow: row wrap;
+        height: auto;
+        width: 100%;
+    }
+
+    .small_paint_two{
+        display: flex;
+        gap: 2em;
+    }
+
+    /*THIRD SECTION*/
+
+    .third_row{
+        height: auto;
+        width: 100%;
+        background: #000;
+    }
+
+    /*First paintings in third row, both large and small*/
+
+    .fifth_div{
+        height: auto;
+        width: 100%;
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+
+    /*First painting row, Small paintings*/
+
+    .tr_small_paints{
+        display: flex;
+        padding-bottom: 0.5em;
+        gap: 1.5em;
+        
+    }
+
+    .fifth_div_text{
+        display: none;
+    }
+
+    /*Second DIV, last paintings*/
+
+    .sixth_div{
+        height: auto;
+        width: 100%;
+        padding-top: .5em;
+    }
+
+    .sixth_div img{
+        height: 13em;
+        width: 9.5em;
     }
 
 
