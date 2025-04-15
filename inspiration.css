@@ -45,6 +45,10 @@
 
 /* NAVBAR SECTION */
 
+.header_section .nav_section{
+    margin-left: auto;
+}
+
 .nav_section .navbar{
     display: flex;
     margin: 30px 35px;
@@ -140,7 +144,7 @@ body .main_section{
 .main_section{
     display: flex;
     justify-content: space-evenly;
-    
+    height: auto;
 }
 
 /* FIRST ROW */
@@ -304,7 +308,7 @@ body .main_section{
 
 .third_row{
     /* background-color: green; */
-    height: 700px;
+    height: auto;
     width: 470px;
     
 }
@@ -374,6 +378,7 @@ body .main_section{
     padding-top: 1px;
     padding-bottom: 2px;
     text-align: center;
+    height: auto;
 }
 
 
@@ -419,6 +424,8 @@ body .main_section{
 
     .burger-icon{
         display: flex;
+        position: relative;
+        
     }
 
     .burger-icon .bar{
@@ -431,12 +438,33 @@ body .main_section{
     }
 
     .dropdown-menu-container{
-        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5em;
+        right: 5em;
+        
     }
     
     .dropdown-menu{
         background: linear-gradient(180deg, rgb(248, 216, 207) 5%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 80%);
         text-align: center;
+        
+    }
+
+    .dropdown-menu li{
+        gap: 8px; 
+        font-size:30px;
+        font-family: "Squada One", sans-serif;
+        color: #000;
+    }
+
+    ul a{
+        text-decoration: none;
+        margin: 0px 15px;
+        font-family: "Staatliches", sans-serif;
+        font-size: 35px;
+        color: black;
+        transition: color 0.5s ease;
     }
 
 
@@ -455,7 +483,7 @@ body .main_section{
         width: 100%;
         background: #000;
         justify-content: center;
-        border-bottom: 2px #fff solid;
+        border-bottom: 1px #fff solid;
     }
 
     .fdc{
@@ -482,10 +510,9 @@ body .main_section{
         display: flex;
         flex-direction: row;
         margin: auto;
-        padding: 0em 7em 0em 0em;
-        padding-right: -5em;
         flex-flow: row-reverse;
         height: auto;
+        width: 100%;
     }
 
     .second_div img{
@@ -551,6 +578,7 @@ body .main_section{
         height: auto;
         width: 100%;
         background: #000;
+        border-top: solid 1px #fff;
     }
 
     /*First paintings in third row, both large and small*/
